@@ -1,0 +1,32 @@
+#include<stdio.h>
+int stack[100],top= -1;
+INT VISITED[100];
+void push(int value)
+{
+stack[++top]=value;
+}
+int pop()
+{
+if(top== -1)
+return -1;
+else
+return stack[top-1];
+}
+void dfs_non_recursive(int adj[10][10],int,start,int n)
+{
+int i;
+push(start);
+visited[start]=1;
+printf("DFS Traversal (non-recursive):");
+while(top!=-1){
+int current=pop();
+print("%d",current);
+for(i=n-1;i>){
+if(adj[current][i]==1&&!visited[i])
+{
+push(i);
+visited[i]=1;
+}
+}
+}
+}
